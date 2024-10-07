@@ -67,3 +67,12 @@ tasks.named('test') {
 tasks.withType(JavaCompile) {
 	options.compilerArgs += ['-Xlint:deprecation']
 }
+
+
+bootJar {
+	enabled = true
+}
+
+jar {
+	enabled = false
+}
